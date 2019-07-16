@@ -11,7 +11,7 @@ class Modelo_sedes extends CI_Model {
     
     function obtener_sedes() {
         $query=$this->db->get('sedes');
-        
+
         if ( $query->num_rows() > 0 ) return $query;
         else return false;
 

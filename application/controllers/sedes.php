@@ -15,6 +15,7 @@ class Sedes extends CI_Controller{
         $vdata['sedes'] = $this->modelo_sedes->obtener_sedes();
 
         $this->load->view('common/header');
+        $this->load->view('common/menu_adm');
         $this->load->view('sedes/listado_sedes',$vdata);
         $this->load->view('common/footer'); 
         
